@@ -12,7 +12,7 @@ A list of links to popular frontend coding articles
 ## Resources used
 
 To build test suites for this project I used:
-* [Jasmine] (https://jasmine.github.io/)- Testing framwork used
+* [Jasmine](https://jasmine.github.io/)- Testing framwork used
 
 # References
 
