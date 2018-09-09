@@ -71,9 +71,11 @@ $(function() {
       });
 
       //Check content exist
-      it('load feed', function(){
+      it('load feed', function(done){
           const feed = document.querySelector('.feed');
+          //console.log(feed.children.length);
           expect(feed.children.length > 0).toBe(true);
+          done();
       });
     });
 
@@ -87,7 +89,7 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0);
             Array.from(feed.children).forEach(function(entry){
-              firstFeed.push(entry.innerText);
+              firstFeed.push(entry.innerHTML);
             })
             loadFeed(1, done);
         });
